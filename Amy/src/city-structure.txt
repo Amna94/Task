@@ -1,0 +1,16 @@
+src
+    app
+        city-details
+            city-details.component.ts/.html/.css
+                city-detail-form
+                    city-detail-form.component.ts/.html/.css
+
+
+        shared
+            city-detail.service.ts
+                city-detail.model.ts
+
+    
+    app-module.ts
+
+index.html

@@ -1,0 +1,16 @@
+src
+    app
+        users-details
+            users-details.component.ts/.html/.css
+                users-detail-form
+                    users-detail-form.component.ts/.html/.css
+
+
+        shared
+            users-detail.service.ts
+                users-detail.model.ts
+
+    
+    app-module.ts
+
+index.html

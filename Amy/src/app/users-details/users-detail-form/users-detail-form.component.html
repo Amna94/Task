@@ -1,0 +1,70 @@
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="id"
+    [value]= "service.formData.id" />
+
+    <div class="form-group col-md-6">
+        <label>First name</label>
+        <input class="form-control form-control-lg" placeholder="First name"
+        name="first_name" #first_name="ngModel" [(ngModel)]="service.formData.first_name"
+        required [class.invalid]="first_name.invalid && first_name.touched">
+    </div>
+    
+    <div class="form-group col-md-6">
+        <label>Last name</label>
+        <input class="form-control form-control-lg" placeholder="Last name"
+        name="last_name" #last_name="ngModel" [(ngModel)]="service.formData.last_name"
+        required [class.invalid]="last_name.invalid && last_name.touched">
+    </div>
+
+    <div class="form-grou col-md-6">
+        <label>Username</label>
+        <input class="form-control form-control-lg" placeholder="Username"
+        name="username" #username="ngModel" [(ngModel)]="service.formData.username"
+        required [class.invalid]="username.invalid && username.touched">
+    </div>
+
+    <div class="form-group col-md-6">
+        <label>Password</label>
+        <input class="form-control form-control-lg" placeholder="Password"
+        name="password" #password="ngModel" [(ngModel)]="service.formData.password"
+        required maxlength="16" minlength="8" [class.invalid]="password.invalid && password.touched">
+    </div>
+
+    <div class="form-group col-md-6">
+        <label>Email</label>
+        <input class="form-control form-control-lg" placeholder="Email"
+        name="e_mail" #e_mail="ngModel" [(ngModel)]="service.formData.e_mail"
+        required [class.invalid]="e_mail.invalid && e_mail.touched">
+    </div>
+
+    <div class="form-group col-md-6">
+        <label>Phone number</label>
+        <input class="form-control form-control-lg" placeholder="Phone number"
+        name="phone_number" #phone_number="ngModel" [(ngModel)]="service.formData.phone_number"
+        required maxlength="15" minlength="9" [class.invalid]="phone_number.invalid && phone_number.touched">
+    </div>
+
+    
+
+        <div class="form-group col-md-3">
+            <label>CityId</label>
+            <input class="form-control form-control-lg" placeholder="CityId"
+            name="city_id" #city_id="ngModel" [(ngModel)]="service.formData.city_id"
+            required [class.invalid]="city_id.invalid && city_id.touched">
+        </div>
+
+        <div class="form-group col-md-3">
+            <label>RoleId</label>
+            <input class="form-control form-control-lg" placeholder="RoleId"
+            name="role_id" #role_id="ngModel" [(ngModel)]="service.formData.role_id"
+            required [class.invalid]="role_id.invalid && role_id.touched">
+        </div>
+
+    <div class="form-group">
+        <button 
+        routerLink="users-details"
+        class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">Add User</button>
+
+        <router-outlet></router-outlet>
+    </div>
+</form>

@@ -1,0 +1,32 @@
+<div class="jumbotron py-3">
+    <h1 class="display-4 text-center">Role Permission details</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-rp-detail-form></app-rp-detail-form>
+
+    </div>
+    <div class="col-md-6">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>RoleId</th>
+                    <th>PermissionId</th>
+                    
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let rpd of service.list">
+                    <td (click)="populateForm(rpd)">{{rpd.role_id}}</td>
+                    <td (click)="populateForm(rpd)">{{rpd.permission_id}}</td>
+                    <td>
+                        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(rpd.role_id)"></i>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

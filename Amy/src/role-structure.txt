@@ -1,0 +1,16 @@
+src
+    app
+        role-details
+            role-details.component.ts/.html/.css
+                role-detail-form
+                    role-detail-form.component.ts/.html/.css
+
+
+        shared
+            role-detail.service.ts
+                role-detail.model.ts
+
+    
+    app-module.ts
+
+index.html

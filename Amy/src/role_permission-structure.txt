@@ -1,0 +1,16 @@
+src
+    app
+        role_permission-details
+            role_permission-details.component.ts/.html/.css
+                role_permission-detail-form
+                    role_permission-detail-form.component.ts/.html/.css
+
+
+        shared
+            role_permission-detail.service.ts
+                role_permission-detail.model.ts
+
+    
+    app-module.ts
+
+index.html

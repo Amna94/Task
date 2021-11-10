@@ -1,0 +1,16 @@
+src
+    app
+        permission-details
+            permission-details.component.ts/.html/.css
+                permission-detail-form
+                    permission-detail-form.component.ts/.html/.css
+
+
+        shared
+            permission-detail.service.ts
+                permission-detail.model.ts
+
+    
+    app-module.ts
+
+index.html

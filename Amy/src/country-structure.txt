@@ -1,0 +1,15 @@
+src
+    app
+        country-details
+        country-details.component.ts/.html/.css
+
+            country-detail-form
+            country-detail-form.component.ts/.html/.css
+
+        shared
+        country-detail.service.ts
+        country-detail.model.ts
+
+    app-module.ts
+
+index.html
